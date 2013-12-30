@@ -1,0 +1,1 @@
+Basic settings for configuring OCaml under emacs.
