@@ -1,0 +1,5 @@
+command-line installer:
+http://hacks-galore.org/aleix/blog/archives/2013/01/08/install-emacs-packages-from-command-line
+
+marmalade:
+http://repo.or.cz/w/emacs.git/blob_plain/1a0a666f941c99882093d7bd08ced15033bc3f0c:/lisp/emacs-lisp/package.el
