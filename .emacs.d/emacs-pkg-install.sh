@@ -1,9 +1,12 @@
 #!/bin/sh
 
-if [ $# -ne 1 ]
+if [ $# -eq 0 ]
 then
-  echo "Usage: `basename $0` <package>"
+  echo "Usage: `basename $0` <package> ... <package>"
   exit 1
 fi
 
-emacs --batch --eval "(defconst pkg-to-install '$1)" -l emacs-pkg-install.el
+for var in "$@"
+do
+    emacs --batch --eval "(defconst pkg-to-install '$var)" -L . -l emacs-pkg-install.el
+done
