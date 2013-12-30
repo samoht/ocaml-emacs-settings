@@ -25,11 +25,11 @@
 (require 'ocp-indent)
 
 ;; merlin
-(require 'merlin)
+;; (require 'merlin)
 
 ;;;; ocp-index
-;; (require 'ocp-index)
-;; (global-set-key [backtab] 'auto-complete)
+(require 'ocp-index)
+(global-set-key [backtab] 'auto-complete)
 
 ;; display and remove trailing whitespaces
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
