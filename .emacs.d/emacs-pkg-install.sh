@@ -8,5 +8,5 @@ fi
 
 for var in "$@"
 do
-    emacs --batch --eval "(defconst pkg-to-install '$var)" -L . -l emacs-pkg-install.el
+    emacs --batch --eval "(defconst pkg-to-install '$var)" -L "~/.emacs.d/" -l emacs-pkg-install.el
 done
